@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Informatique - Site Web</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --accent-color: #2ecc71;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--primary-color); text-transform: uppercase; }
+
+        /* Style de la galerie */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            max-width: 1000px;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .photo-box {
+            background: var(--card-bg);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            background-color: #eee; /* Couleur de fond si l'image est manquante */
+        }
+
+        .photo-box p { margin-top: 10px; font-weight: bold; font-size: 0.9em; }
+
+        /* Style du tableau */
+        .table-container {
+            width: 100%;
+            max-width: 1000px;
+            background: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            height: 25px; /* Hauteur minimale pour les cellules vides */
+        }
+
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f1f1f1; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mon TP Informatique</h1>
+        <h3>MICHAEL MUDIMBE ET SES PHOTO</h3>
+    </header>
+
+    <div class="gallery">
+        <div class="photo-box">
+            <img src="bebe1.jpg" alt="Photo a 3 ans ">
+            <p>Moi (3 ans)</p>
+        </div>
+        <div class="photo-box">
+            <img src="bebe2.jpg" alt="Photo a 3 ans ">
+            <p>Moi (3 ans)</p>
+        </div>
+        <div class="photo-box">
+            <img src="actuel1.jpg" alt="Photo actuelle ">
+            <p>Moi (Actuel)</p>
+        </div>
+        <div class="photo-box">
+            <img src="actuel2.jpg" alt="Photo actuelle ">
+            <p>Moi (Actuel)</p>
+        </div>
+        <div class="photo-box">
+            <img src="actuel3.jpg" alt="Photo actuelle">
+            <p>Moi (Actuel)</p>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Colonne 2</th>
+                    <th>Colonne 3</th>
+                    <th>Colonne 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>01</td><td></td><td></td><td></td></tr>
+                <tr><td>02</td><td></td><td></td><td></td></tr>
+                <tr><td>03</td><td></td><td></td><td></td></tr>
+                <tr><td>04</td><td></td><td></td><td></td></tr>
+                <tr><td>05</td><td></td><td></td><td></td></tr>
+                <tr><td>06</td><td></td><td></td><td></td></tr>
+                <tr><td>07</td><td></td><td></td><td></td></tr>
+                <tr><td>08</td><td></td><td></td><td></td></tr>
+                <tr><td>09</td><td></td><td></td><td></td></tr>
+                <tr><td>10</td><td></td><td></td><td></td></tr>
+                <tr><td>11</td><td></td><td></td><td></td></tr>
+                <tr><td>12</td><td></td><td></td><td></td></tr>
+                <tr><td>13</td><td></td><td></td><td></td></tr>
+                <tr><td>14</td><td></td><td></td><td></td></tr>
+                <tr><td>15</td><td></td><td></td><td></td></tr>
+                <tr><td>16</td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
